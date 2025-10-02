@@ -1,0 +1,178 @@
+<!-- Ricardo Sebastian Luy Carapaica -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <title>War Canvas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" type="image/png" sizes="16x16" href="imgs/war-canvas.webp">
+  <!-- Esto cargaria un archivo de estilo, pero no es necesario en Fiddle porque lo hace automáticamente -->
+  <script src="script.js"></script>
+  <!--Aquí podriamos cargar los scripts, también se puede en el <body>, y pasa lo mismo que con el css de antes, en verdad aquí no estamos cargando nada-->
+</head>
+
+<body>
+  <!-- Cabecera -->
+  <header class="fila">
+    <div class="col-4 header-brand">
+      <a href="#"><img src="imgs/war-canvas.webp" alt="logo del videojuego" class="logo-header"></a>
+      <span id="titulo">WAR CANVAS</span>
+    </div>
+    <div class="col-4 jugar">
+      <button id="btn-jugar"><a href=""><span class="texto-cab">JUGAR</span></a></button>
+    </div>
+    <div class="col-4 reglas-creditos">
+      <button id="btn-inicio"><a href="#"><span class="texto-cab">INICIO</span></a></button>
+      <button id="btn-reglas"><a href="#"><span class="texto-cab">REGLAS</span></a></button>
+      <button id="btn-creditos"><a href="#"><span class="texto-cab">CREDITOS</span></a></button>
+    </div>
+  </header>
+  <!-- separador -->
+  <hr class=" fila col-12">
+
+  <main>
+    <!-- PAG SOBRE INICIO -->
+    <section id="inicio">
+      <h1 class="titulos-inicio">¡Bienvenido a War Canvas!</h1>
+      <br>
+      <h2 class="titulos-inicio colp-6">Resumen</h2>
+      <h2 class="titulos-inicio colp-6" >Equipos</h2>
+      
+    </section>
+
+    <!-- PAG SOBRE REGLAS -->
+    <section id="reglas" class="fila" style="display: none;">
+      <h2 class="titulos-reglas">¿Cómo jugar?</h2>
+      <h2 class="titulos-reglas">Objetivo</h2>
+      <h2 class="titulos-reglas">Reglas</h2>
+      <ul>
+        <li>.</li>
+        <li>.</li>
+      </ul>
+    </section>
+    <!-- PAG SOBRE CREDITOS -->
+    <section id="creditos" class="fila" style="display: none;">
+      <h1 class="titulos-creditos">Desarrolladores</h1>
+      <div class="card-container">
+
+        <!-- Dev1 -->
+        <button class="card" id="Tarjeta1">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="imgs/Frosty.webp" alt="Ricardo">
+            </div>
+            <div class="card-back">
+              <h2>Ricardo Luy</h2>
+              <p>Back</p>
+            </div>
+          </div>
+        </button>
+        <!-- Dev2 -->
+        <button class="card" id="Tarjeta2">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="imgs/julia.webp" alt="Julia">
+            </div>
+            <div class="card-back">
+              <h2>Julia Vera</h2>
+              <p>Back</p>
+            </div>
+          </div>
+        </button>
+        <!-- Dev3 -->
+        <button class="card" id="Tarjeta3">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="imgs/capi.webp" alt="Samuel">
+            </div>
+            <div class="card-back">
+              <h2>Samuel Manzaneque</h2>
+              <p>Back</p>
+            </div>
+          </div>
+        </button>
+        <!-- Dev4 -->
+        <button class="card" id="Tarjeta4">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="imgs/Diego.webp" alt="Diego">
+            </div>
+            <div class="card-back">
+              <h2>Diego Jimenez</h2>
+              <!-- <p>Back</p> -->
+            </div>
+          </div>
+        </button>
+
+      </div>
+      <!-- Referencias -->
+      <h1 class="titulos-creditos">Referencias</h1>
+
+      <div class="card-container">
+        <!-- Tarjeta Ajedrez y Stratego -->
+        <button class="card referencias" id="ref1">
+          <div class="card-inner">
+            <div class="card-front">
+              <img class="iconos-ref" src="imgs/piezas-de-ajedrez.webp" alt="Ajedrez">
+              <img class="iconos-ref" src="imgs/stratego.webp" alt="Stratego">
+            </div>
+            <div class="card-back">
+              <h2>Ajedrez y Stratego</h2>
+              <p>Inspiración en diseño del tablero, piezas con diferentes movimientos y diferentes rangos</p>
+            </div>
+          </div>
+        </button>
+        <!-- Tarjeta Risk -->
+        <button class="card referencias" id="ref2">
+          <div class="card-inner">
+            <div class="card-front">
+              <img class="iconos-ref" src="imgs/risk.webp" alt="Risk">
+
+            </div>
+            <div class="card-back">
+              <h2>Risk</h2>
+              <p>Inspiración en las mecánicas de ataque con dados</p>
+            </div>
+          </div>
+        </button>
+        <!-- Tarjeta Drawful -->
+        <button class="card referencias" id="ref3">
+          <div class="card-inner">
+            <div class="card-front">
+              <img class="iconos-ref" src="imgs/drawful.webp" alt="Drawful">
+
+            </div>
+            <div class="card-back">
+              <h2>Drawful</h2>
+              <p>Inspiración en la estética de los personajes del bando dibujo</p>
+            </div>
+          </div>
+        </button>
+
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Pie de pagina -->
+  <footer class="fila">
+    <div class="col-4 izq ">
+      <p><a href="https://www.instagram.com/estudio.1212_/" target="_blank">Contacto</a> </p>
+
+    </div>
+    <div class="col-4 mid">
+      <p> <a href="https://x.com/estudio_1212" target="_blank">Twitter/X</a></p>
+    </div>
+    <div class="col-4 der">
+      <p><a href="https://github.com/CapitanManzana/WarCanvas" target="_blank">GitHub.com</a></p>
+    </div>
+  </footer>
+</body>
+<!--2023-2024-->
+
+</html>
