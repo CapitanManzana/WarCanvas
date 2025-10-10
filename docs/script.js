@@ -15,12 +15,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const btnInicio = document.getElementById('btn-inicio');
     const btnReglas = document.getElementById('btn-reglas');
     const btnCreditos = document.getElementById('btn-creditos');
+    const btnJuego = document.getElementById('btn-jugar');
 
     // Secciones (objeto)
     const secciones = {
         inicio: document.getElementById('inicio'),
         reglas: document.getElementById('reglas'),
-        creditos: document.getElementById('creditos')
+        creditos: document.getElementById('creditos'),
+        jugar: document.getElementById('jugar')
     };
 
     // Función para mostrar una sección y ocultar todas las demás
@@ -51,5 +53,10 @@ document.addEventListener('DOMContentLoaded', () => {
     btnCreditos.addEventListener('click', e => {
         e.preventDefault();
         mostrarSeccion(secciones.creditos);
+    });
+
+    btnJuego.addEventListener('click', e=> {
+        e.preventDefault();
+        mostrarSeccion(secciones.jugar);
     });
 });
