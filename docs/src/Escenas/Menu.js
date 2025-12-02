@@ -1,5 +1,6 @@
 
-export default class Menu extends Phaser.Scene {
+import SceneBase from "./SceneBase.js";
+export default class Menu extends SceneBase {
     constructor() {
         super("Menu");
     }
@@ -10,8 +11,7 @@ export default class Menu extends Phaser.Scene {
     }
 
     create() {
-        // console.log("Escenas cargadas:", this.game.scene.keys);
-        this.scene.launch('UIScene'); 
+        super.create();
         this.add.image(400, 300, 'fondo').setOrigin(0.5)
         this.add.text(this.scale.width / 2, this.scale.height / 2 - 200, 'WAR CANVAS', {
             fontSize: '60px',

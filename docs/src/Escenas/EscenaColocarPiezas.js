@@ -6,8 +6,9 @@ import PanelEventos from "../Render/PanelEventos.js";
 import Equipo from "../Logica/Equipo.js";
 import { Eventos } from "../Events.js";
 import { EventBus } from "../EventBus.js";
+import SceneBase from "./SceneBase.js";
 
-export default class EscenaColocarPiezas extends Phaser.Scene {
+export default class EscenaColocarPiezas extends SceneBase {
     constructor() {
         super("ElegirPiezas")
     }
@@ -20,6 +21,7 @@ export default class EscenaColocarPiezas extends Phaser.Scene {
     }
 
     create() {
+        super.create();
        // this.crearAnimaciones();
        this.todasLasPiezas = true;
 

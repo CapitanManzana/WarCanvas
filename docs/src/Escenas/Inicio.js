@@ -12,9 +12,10 @@ import Equipo from "../Logica/Equipo.js";
 import PanelInfoPiezas from "../Render/PanelInfoPiezas.js";
 import EventosAleatorios from "../Logica/EventosAleatorios.js";
 import PanelEventos from "../Render/PanelEventos.js";
+import SceneBase from "./SceneBase.js";
 
 
-export default class Inicio extends Phaser.Scene {
+export default class Inicio extends SceneBase {
     constructor() {
         super("Inicio");
     }
@@ -29,6 +30,7 @@ export default class Inicio extends Phaser.Scene {
     }
 
     create() {
+        super.create();
         this.crearAnimaciones();
 
         //Creamos la instancia y la guardamos en tab
