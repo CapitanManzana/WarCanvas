@@ -20,3 +20,6 @@ img https://opencritic.com/game/2866/drawful-2
 
 Cuadro de la batalla de Navas de Tolosa como fondo del menu
 Obra perteneciente a https://es.wikipedia.org/wiki/Francisco_de_Paula_Van_Halen
+
+Icono de expandir
+img: <a target="_blank" href="https://icons8.com/icon/8183/expand">Expand</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
